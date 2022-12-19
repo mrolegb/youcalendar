@@ -1,0 +1,77 @@
+.Calendar {
+    height: 75%;
+    min-height: 600px;
+    max-height: 600px;
+    overflow: auto;
+    display: flex;
+  }
+
+.CalendarRow {
+  float: inline-block;
+}
+
+.Grid {
+  width: 700px;
+  display: grid;
+  align-self: middle;
+  grid-gap: 0px;
+  grid-template-columns: repeat(7, 100px);
+}
+
+.GridCell {
+  border-style: dotted;
+  border-color: gray;
+  border-collapse: collapse;
+  width: 100px;
+  height: 35px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.DateCell {
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+  align-self: middle;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
+  border-left: 1px solid gray;
+  background-color: silver;
+  width: 100px;
+}
+
+.StatusBar {
+  height: 20px;
+  vertical-align: middle;
+  align-self: middle;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
+  border-left: 1px solid gray;
+  background-color: silver;
+  width: 100%;
+}
+
+.WeekDay {
+  font-size: x-small;
+}
+
+.DateCell:hover {
+  background-color: whitesmoke;
+}
+
+input.DateCell {
+  margin-right: 0px;
+  border-radius: 0px;
+  border: 0px;
+  border-left: 1px solid gray;
+  background-color: gainsboro;
+}
+
+.Header {
+  height: 30px;
+  background-color: gray;
+}
+
+.Wrapper {
+  display: grid;
+}

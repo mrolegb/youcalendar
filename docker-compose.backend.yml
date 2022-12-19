@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  backend:
+    build: backend/.
+    image: backend:latest
+    env_file:
+      - .env
+    ports:
+      - 3080:3080
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379

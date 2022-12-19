@@ -1,0 +1,12 @@
+.pytest_cache
+.vscode
+backend/__pycache__
+backend/src/__pycache__
+backend/test/__pycache__
+backend/src/database
+e2e/.pytest_cache
+e2e/__pycache__
+frontend/node_modules
+frontend/youcalendar/node_modules
+.env
+frontend/calendar/.env
